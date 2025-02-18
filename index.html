@@ -1,0 +1,416 @@
+<!DOCTYPE html>   
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Diseño Web Tarea 3</title>
+    <meta name="description" content="Tarea 3 Diseño Web" />
+    <meta name="keywords" content="HTML, CSS, Diseño Responsivo" />
+    <meta name="author" content="Nayeli Arrieta" />
+    <link rel="stylesheet" type="text/css" href="css/menu.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+</head>
+
+<body>
+    <div id="outer">
+        <header id="header">
+            <div id="logo">
+                <img id="splash" src="images/imagenWeb.png" alt="Logo">
+                <div class="texto-container">
+                    <h1 class="TituloWeb">¿Qué es Bootstrap?</h1>
+                    <p>Bootstrap es un framework de código abierto en CSS, el cual, facilita el desarrollo de sitios web responsivos y con diseños profesionales. Este ofrece scripts predefinidos y un sistema de grillas flexibles para la distribución equilibrada de la página.</p>
+                     
+                    <!-- Botón para abrir el modal -->
+                       <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#infoModal">
+                        Más Información
+                    </button>
+                </div>
+            </div>
+        </header>
+
+
+<!-----------------------------------------------------Inicio Navbars-------------------------------------------------------->  
+
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+            <div class="container-fluid">
+                <!-- Botón hamburguesa para móviles -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Contenido del navbar -->
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav w-100 justify-content-between mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active principal" href="#" id="layoutLink">Layout</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active principal" href="#" id="componentsLink">Components</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active principal" href="#" id="formsLink">Forms</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active principal" href="#" id="wireframeLink">Wireframe</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active principal" href="#" id="bootstrapLink">Bootstrap Framework</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+ 
+
+<!----------------------------------------------Inicio Pagination---------------------------------------------------->
+        <section id="responsive-design">
+            <div class="responsive-content">
+                <h2>¿Por qué usar Bootstrap?</h2>
+                <div class="container-fluid py-4">
+                    <div id="benefitsCarousel" class="carousel slide" data-bs-ride="false">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="card mx-auto" style="max-width: 800px;">
+                                    <div class="card-body text-center p-5">
+                                        <p class="card-text">Ofrece un sistema de grillas responsivo.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="card mx-auto" style="max-width: 800px;">
+                                    <div class="card-body text-center p-5">
+                                        <p class="card-text">Simplifica la creación de diseños funcionales y atractivos.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="card mx-auto" style="max-width: 800px;">
+                                    <div class="card-body text-center p-5">
+                                        <p class="card-text">Incluye componentes predefinidos y su funcionamiento.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="card mx-auto" style="max-width: 800px;">
+                                    <div class="card-body text-center p-5">
+                                        <p class="card-text">Su gran extensión le ha dado innumerables tutoriales en diferentes formatos.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Pagination centrada -->
+                        <div class="d-flex justify-content-center mt-4">
+                            <nav aria-label="Benefits navigation">
+                                <ul class="pagination">
+                                    <li class="page-item">
+                                        <button class="page-link" data-bs-target="#benefitsCarousel"
+                                            data-bs-slide="prev">
+                                            <span aria-hidden="true">&laquo;</span>
+                                        </button>
+                                    </li>
+                                    <li class="page-item"><button class="page-link" data-bs-target="#benefitsCarousel"
+                                            data-bs-slide-to="0">1</button></li>
+                                    <li class="page-item"><button class="page-link" data-bs-target="#benefitsCarousel"
+                                            data-bs-slide-to="1">2</button></li>
+                                    <li class="page-item"><button class="page-link" data-bs-target="#benefitsCarousel"
+                                            data-bs-slide-to="2">3</button></li>
+                                    <li class="page-item"><button class="page-link" data-bs-target="#benefitsCarousel"
+                                        data-bs-slide-to="3">4</button></li>
+                                <li class="page-item">
+                                    <button class="page-link" data-bs-target="#benefitsCarousel"
+                                        data-bs-slide="next">
+                                        <span aria-hidden="true">&raquo;</span>
+                                    </button>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+
+
+<!------------------------------------------------Informacion en la imagen------------------------------------------------->
+    <main id = "principalcontent">
+
+        <div id = "secondarycontent">
+            <aside id="contentAside">
+                <div class="divAside">
+                    <img id="imgdiseno" src="images/disenoWeb.png">
+                    <p id="definitionText" class="definition-text">Pasa el mouse sobre una opción del menú para ver la definición.</p>
+                </div>
+            <script>
+            
+          const definitions = {
+              "Layout": "El layout se refiere a la estructura y disposición de los elementos dentro de una página web. " + 
+              "Es el diseño visual que organiza los contenidos de una manera clara y coherente para facilitar la interacción del usuario.",
+          
+              "Components": "En diseño web, los son piezas individuales y reutilizables de una interfaz de usuario (UI), que realizan tareas específicas y ayudan a construir interfaces consistentes y funcionales.",
+          
+              "Forms": "Los formularios son estructuras en HTML que permiten la entrada de datos por parte del usuario, como información personal, contraseñas, comentarios, etc.",
+          
+              "Wireframe": "Un wireframe es una representación visual básica de una interfaz de usuario, diseñada para ilustrar la estructura de la página sin detalles de diseño (como colores o imágenes). Su objetivo es mostrar la distribución y jerarquía de los elementos.",
+              
+              "Bootstrap Framework": "Bootstrap es un framework de código abierto para el desarrollo de sitios web y aplicaciones, que proporciona herramientas de diseño (CSS y JavaScript) para crear interfaces responsivas y móviles."
+          };
+          
+          const definitionText = document.getElementById("definitionText");
+          const image = document.getElementById("imgdiseno");
+          
+          const menuItems = document.querySelectorAll(".principal");
+          
+          menuItems.forEach(item => {
+              item.addEventListener("mouseover", function() {
+                  const key = this.textContent.trim(); 
+                  if (definitions[key]) {
+                      definitionText.textContent = definitions[key];
+                      definitionText.style.display = "block";
+                      image.style.display = "none";
+                  }
+              });
+          
+              item.addEventListener("mouseout", function() {
+                  definitionText.style.display = "none";
+                  image.style.display = "block";
+              });
+          });
+                  </script>
+            </aside>
+        </div>
+
+           
+        <div id="prymarycontent">
+
+
+<!----------------------------------------------------Tabs y navbars--------------------------------------------------------->
+            <div class="tab-container">
+                <!-- Nav tabs -->
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="unidades-tab" data-bs-toggle="tab"
+                            data-bs-target="#unidades" type="button" role="tab" aria-controls="unidades"
+                            aria-selected="true">Bootstrap 4</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="diseno-tab" data-bs-toggle="tab" data-bs-target="#diseno"
+                            type="button" role="tab" aria-controls="diseno" aria-selected="false">Bootstrap 5</button>
+                    </li>
+                </ul>
+
+
+                  <!-- Tab panes -->
+                  <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="unidades" role="tabpanel"
+                        aria-labelledby="unidades-tab">
+                        <article class="post p-3">
+                            <p>Tiene colores limitados.
+                                 Utiliza JQuery y sus complementos.
+                                Las API de utilidad no son alterables.
+                                No cuenta con iconos SVG.
+                                Compatible con internet Explorer 10 y 11.
+                                </p>
+                        </article>
+                    </div>
+                    <div class="tab-pane fade" id="diseno" role="tabpanel" aria-labelledby="diseno-tab">
+                        <article class="post p-3">
+                            <p>Se implementó una mayor paleta de colores.
+                                Cambia a Vanilla-JS
+                                Las API de utilidad son alterables, incluso, se pueden implementar propias.
+                                Tiene sus propios iconos SVG.
+                                No compatible con internet Explorer 10 y 11.
+                                </p>
+                        </article>
+                    </div>
+                </div>
+            </div>
+          </div>
+
+        </main>
+
+<!----------------------------------------------------- Dropdown -------------------------------------------------->
+        <div class="dropdown">
+            <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                <h5>Recursos Wireframe</h5>
+            </button>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" data-target="Layout" href="#">Layout</a></li>
+                <li><a class="dropdown-item" data-target="Componentes de Navegación" href="#">Componentes de Navegación</a></li>
+                <li><a class="dropdown-item" data-target="Componentes de interacción" href="#">Componentes de interacción</a></li>
+                <li><a class="dropdown-item" data-target="Componentes de contenido dinámico" href="#">Componentes de contenido dinámico</a></li>
+                <li><a class="dropdown-item" data-target="Campos de entrada en forms" href="#">Campos de entrada en forms</a></li>
+                <li><a class="dropdown-item" data-target="Elementos de selección en forms" href="#">Elementos de selección en forms</a></li>
+                <li><a class="dropdown-item" data-target="Validación y feedback" href="#">Validación y feedback</a></li>
+            </ul>
+        </div>
+
+        <!-- Contenido Responsivo-->
+        <div class="container-fluid mt-4">
+            <div class="content-box" id="Layout">
+                <strong>Layout</strong>
+                <p>Define la estructura de la página. Algunos de los más usados son: sidebars, containers, grid y columns</p>
+            </div>
+            <div class="content-box" id="Componentes de Navegación">
+                <strong>Componentes de Navegación</strong>
+                <p>Elementos que permiten a los usuarios desplazarse dentro de la página web y realizar diferentes accion</p>
+            </div>
+            <div class="content-box" id="Componentes de interacción">
+                <strong>Componentes de interacción</strong>
+                <p> Elementos que responden a las acciones del usuario, como botones, enlaces y demás.</p>
+            </div>
+            <div class="content-box" id="Componentes de contenido dinámico">
+                <strong>Componentes de contenido dinámico</strong>
+                <p>Elementos que cambian o actualizan su contenido de forma automática.</p>
+            </div>
+            <div class="content-box" id="Campos de entrada en forms">
+                <strong>Campos de entrada en forms</strong>
+                <p>Secciones donde los usuarios pueden ingresar datos en el formulario.</p>
+            </div>
+            <div class="content-box" id="Elementos de selección en forms">
+                <strong>Elementos de selección en forms</strong>
+                <p>Permiten al usuario elegir una opcion de un grupo predefinido.</p>
+            </div>
+            <div class="content-box" id="Validación y feedback">
+                <strong>Validación y feedback</strong>
+                <p>Proceso del formulario donde se deben validar que todos los datos del usuario sean correctos.</p>
+            </div>
+        </div>          
+
+        <!-- Script para seleccionar-->
+        <script>
+            document.querySelectorAll('.dropdown-item').forEach(item => {
+                item.addEventListener('click', function(event) {
+                    event.preventDefault(); // Evita salto de página
+
+                    let targetId = this.getAttribute('data-target');
+                    let targetElement = document.getElementById(targetId);
+
+                    // Oculta todas las secciones antes de mostrar la nueva
+                    document.querySelectorAll('.content-box').forEach(el => el.classList.remove('show'));
+
+                    // Muestra solo la sección seleccionada
+                    if (targetElement) {
+                        targetElement.classList.add('show');
+                    }
+                });
+            });
+        </script>
+
+            
+<!----------------------------------------------------------Carousel--------------------------------------------->
+       <div class="carousel slide" id="carouselDemo"
+       data-bs-wrap="true" data-bs-ride="carousel">
+
+        <div class="carousel-inner">
+
+            <div class="carousel-item active"
+            data-bs-interval="2000">
+                <img src="images/image5.png" class="w-100">
+            </div>
+            
+            <div class="carousel-item"
+            data-bs-interval="2000">
+                <img src="images/images3.jpeg"  class="w-100">
+              
+            </div>
+            
+            <div class="carousel-item"
+            data-bs-interval="2000">
+            <img src="images/images4.jpeg"  class="w-100">
+            </div>
+        </div>
+
+        <button class="carousel-control-prev" type="button" 
+        data-bs-target="#carouselDemo" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+
+        <button class="carousel-control-next" type="button"
+        data-bs-target="#carouselDemo" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+        </button>
+
+        <div class="carousel-indicators">
+
+            <button type="button" class="active"  
+                data-bs-target="#carouselDemo" 
+                data-bs-slide-to="0">
+                <img src="images/image5.png"/>
+            </button>
+
+            <button type="button"  
+                data-bs-target="#carouselDemo" 
+                data-bs-slide-to="1">
+                <img src="images/images3.jpeg" />
+            </button>
+
+            <button type="button" 
+                data-bs-target="#carouselDemo" data-bs-slide-to="2">
+                <img src="images/images4.jpeg"/>
+            </button>
+        </div>
+       </div>
+
+
+<!-----------------------------------------------------------Modal----------------------------------------------->
+    <div class="modal fade" id="infoModal" tabindex="-1" aria-labelledby="infoModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="infoModalLabel">Información Adicional sobre Bootstrap</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h4>Datos Interesantes sobre Bootstrap</h4>
+                    <ul>
+                        <li><strong>Popularidad y Comunidad: </strong>Bootstrap es uno de los frameworks más populares del mundo, con una enorme comunidad de usuarios y desarrolladores. La documentación es extensa, y existen millones de tutoriales disponibles en línea.</li>
+                        <li><strong>Desarrollado por Twitter:  </strong>Bootstrap fue originalmente creado por dos empleados de Twitter, Mark Otto y Jacob Thornton, con el propósito de mejorar la consistencia del diseño en el desarrollo de herramientas internas de la compañía. Actualmente, es uno de los frameworks de front-end más utilizados en el desarrollo web.</li>
+                        <li><strong>Compatibilidad Cross-Browser:  </strong>Bootstrap asegura que tu sitio se verá bien en todos los navegadores modernos, como Chrome, Firefox, Safari y Edge, y también en versiones más antiguas de Internet Explorer (IE9 y posteriores).</li>
+                    </ul>
+                    <p>Bootstrap cuenta con clases utilitarias o especiales, las cuales incluye una amplia gama de clases utilitarias que permiten agregar estilos rápidamente sin necesidad de escribir CSS personalizado.</p>
+                    <p>Además, adopta el enfoque mobile-first (primero móvil), lo que significa que se enfoca en crear diseños optimizados para dispositivos móviles antes de adaptarlos a pantallas más grandes. </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!------------------------------------Grid de 12 columnas-------------------------------->
+    <div class="container">
+        <div class="item item-3">Columna 1 (3 columnas)</div>
+        <div class="item item-3">Columna 2 (3 columnas)</div>
+        <div class="item item-3">Columna 3 (3 columnas)</div>
+        <div class="item item-3">Columna 4 (3 columnas)</div>
+        <div class="item item-6">Columna 5 (6 columnas)</div>
+        <div class="item item-6">Columna 6 (6 columnas)</div>
+    </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+
+    <footer id="footer">
+
+        <div class="mb-3">
+            <label for="email" class="form-label">Correo Electrónico</label>
+            <input type="email" class="form-control" id="email" placeholder="Introduce tu correo electrónico">
+          </div>
+
+        <div class="footer-container">
+            <div class="footer-item">Nayeli Arrieta <br>Thaylin Barrueta <br>Fabricio Sequeira <br>Fabricio Arias<br><br><br>
+            </div>
+              
+            <div class="footer-item">Diseño web responsivo y con bootstrap</div>
+        </div>
+    </footer>
+    
+</body>
+</html>
